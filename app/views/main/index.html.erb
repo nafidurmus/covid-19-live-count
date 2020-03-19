@@ -1,1 +1,30 @@
-deneme
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Dünya toplam vaka</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title "><%= /\d+[,.]\d+/.match(@world[0]) %></h1>
+      
+        
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Dünya Toplam Ölüm</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title "><%= /\d+[,.]\d+/.match(@world[1]) %></h1>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Dünya toplam iyileşen</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title "><%= /\d+[,.]\d+/.match(@world[2]) %></h1>
+
+      </div>
+    </div>
+  </div>
