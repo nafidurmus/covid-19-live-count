@@ -20,7 +20,7 @@ class MainController < ApplicationController
 
 		request = Net::HTTP::Get.new(url)
 		request["content-type"] = 'application/json'
-		request["authorization"] = 'apikey your_key'
+		request["authorization"] = 'apikey 2Fdhem1KI5mpRKkywFNInm:5nkvw1MDPBHVPJhFP1yy9P'
 
 		@response = http.request(request)
 		@response = @response.read_body
